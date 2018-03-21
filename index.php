@@ -1,8 +1,4 @@
-<?php require_once('private/initialize.php');
-
-
-            
-            ?>
+<?php require_once('private/initialize.php');?>
 
 <!DOCTYPE HTML>
 
@@ -26,7 +22,7 @@
      
         </script>
         <style>
-            body{
+/*            body{
                 background: url('img/lingo.png') fixed no-repeat ;;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
@@ -64,8 +60,8 @@
             
             #table .input{
                 margin-top: 100px;
-                /*float: left;*/
-                /*box-sizing: border-box;*/
+                float: left;
+                box-sizing: border-box;
             }
             
             .button{
@@ -84,9 +80,7 @@
                 
             }
             
-            #signup, #inlog{
-/*               margin-bottom:75px;*/
-            }            
+            */
         </style>
         
         
