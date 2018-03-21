@@ -1,4 +1,8 @@
+  
+/* ------------------------main tags --------------------------------------*/
             body{
+                
+                margin: 0;
                background: url('../img/lingo.png') fixed no-repeat ;;
                -webkit-background-size: cover;
                -moz-background-size: cover;
@@ -15,7 +19,44 @@
             .main{
                margin-top: 100px;
             }
+            .main-wrapper{
+                    margin: 0px;
+
+/*    
+    text-align: center ;
+    font-size: 30px;
+*/    font-family: geneva, arial, "Times new roman";/*
+    padding: 30px;
+    float: right;
+    position: fixed;*/
+
+    
+            }
             
+            
+            
+            
+/* ------------------------------------------------------------------*/  
+
+
+
+.nav-login{
+    width: 400px;
+    height: 200px;
+    box-sizing: inline;
+    background-color: rgba(0, 0 , 0, 0.74);
+    border-radius: 5px;
+    color: white;
+    margin: auto;
+}
+
+
+
+.nav-login, .loginInput{
+    margin-top: 100px;
+    /*float: left;*/
+    /*box-sizing: border-box;*/
+}
             
             #speelveld{
                width: 800px;
@@ -35,9 +76,7 @@
             
             #table .input{
                margin-top: 100px;
-               
-                /*float: left;*/
-                /*box-sizing: border-box;*/
+
             }
             
             .button{
@@ -97,3 +136,42 @@
             }
          
    
+            
+            
+/*-----------------------menu bar---------------------------- */
+
+ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+    top: 0;
+    
+}
+
+li {
+    float: left;
+    
+}
+
+li a {
+    
+    display: block;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #000000 ;
+}
+
+.active {
+    background-color: #000000;
+}
