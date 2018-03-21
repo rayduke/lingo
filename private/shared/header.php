@@ -9,7 +9,14 @@
         
   </head>
     <body>
-     <header>
-            
-            
+     <header> 
+        
+      <div class="main-wrapper">
+        <ul>
+         <li><a href="index.php">Home</a></li>
+         <li><a href="login.php">Login</a></li>
+         <li><a href="game.php">Spel</a></li>   
+        </ul> 
+      </div>
+     
      </header>

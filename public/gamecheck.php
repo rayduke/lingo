@@ -1,9 +1,20 @@
-<?php include(SHARED_PATH . '/header.php');?>
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+        <script>
 
- <body>
+        </script>
+    </head>
+    <body>
+        
+        <?php 
+        
+        
+        $guess = json_decode($_POST['letter']);
+        echo $guess;
+        echo "TETSTESTSET";
+        ?>
+    </body>
 
-<?php
-
-?>
- </body>
 </html>

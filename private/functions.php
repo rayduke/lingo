@@ -5,7 +5,10 @@ function rel_url($pad){
     }
     return WWW_ROOT . $pad;
 }
-    
+
+
+
+
     function createTable(){
    
         echo "<table id=vakken>";
@@ -19,6 +22,9 @@ function rel_url($pad){
         } echo "</table>";
     }  
 
+    
+    
+    
     
     function createAlphabet(){
         echo "<table id=alfa>";
