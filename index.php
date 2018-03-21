@@ -1,4 +1,8 @@
-<?php require_once('private/initialize.php');?>
+<?php require_once('private/initialize.php');
+
+
+            
+            ?>
 
 <!DOCTYPE HTML>
 
@@ -29,6 +33,8 @@
                 -o-background-size: cover;
                 background-size: cover;
             }
+            
+            
             h1{
                 text-align: center;
                 font-size: 50px;
@@ -56,7 +62,7 @@
         
             }
             
-           #table .input{
+            #table .input{
                 margin-top: 100px;
                 /*float: left;*/
                 /*box-sizing: border-box;*/
@@ -77,10 +83,10 @@
                 font-size: 17px;
                 
             }
+            
             #signup, #inlog{
 /*               margin-bottom:75px;*/
             }            
-
         </style>
         
         
@@ -90,6 +96,7 @@
             
             
         </header>
+   
         <main class=main>
             <div id="wrapper">
             <h1>Login</h1>
@@ -115,7 +122,7 @@
              
              </table>
             </div>
-            
+           
         </main>
     </body>
 </html>

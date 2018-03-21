@@ -1,0 +1,99 @@
+            body{
+               background: url('../img/lingo.png') fixed no-repeat ;;
+               -webkit-background-size: cover;
+               -moz-background-size: cover;
+               -o-background-size: cover;
+               background-size: cover;
+            }
+            h1{
+               text-align: center;
+               font-size: 50px;
+               margin: 5px;
+               color: black;
+            }
+            
+            .main{
+               margin-top: 100px;
+            }
+            
+            
+            #speelveld{
+               width: 800px;
+               height: 500px;
+               box-sizing: inline;
+               background-color: rgba(0, 0 , 0, 0.74);
+               border-radius: 5px;
+               color: white;
+               margin: auto;
+            }
+            
+            table{
+               margin: auto;
+               
+        
+            }
+            
+            #table .input{
+               margin-top: 100px;
+               
+                /*float: left;*/
+                /*box-sizing: border-box;*/
+            }
+            
+            .button{
+               text-align: center;
+                
+               padding: 10px;
+               float:left;
+               background: white;
+               margin: 2px;
+               color: black;
+               border-radius: 10%;
+                
+            }
+            input{
+               font-size: 17px;
+                
+            }
+            #signup, #inlog{
+/*               margin-bottom:75px;*/
+            }     
+            
+           .navy{
+               background-color: dodgerblue;
+               width: 55px;
+               height: 55px;
+               border-radius: 10%;
+                
+            }
+            
+            #speelveld table {
+               background-color: white;
+               display: box;
+               margin-top: 70px;
+               
+            }
+            
+            .letters{
+               background-color: purple;
+               width: 50px;
+               height: 50px;
+               border-radius: 80%;
+            }
+            
+            .alfa{
+               margin: 0px;
+               width:100%; 
+               height:100%;
+               text-align: center;
+               font-size: 40px;
+               font-style: verdana;
+               color: yellow;
+               background-color: Transparent;
+               background-repeat:no-repeat;
+               border: none;
+               cursor:pointer;
+               overflow: hidden; 
+            }
+         
+   
