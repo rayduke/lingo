@@ -1,22 +1,36 @@
-            
-            
+    if (typeof i == 'undefined') {
+        var i = 0;
+    
+}        
+   
 function letterkeus(id){
  
-        var data = {id};
-                var html = document.getElementsByTagName("html");
-                
+        var data = {Id:id}
+//              
+//                i = i + id;
+//                alert(i);
                 var xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function(){
                     if(xhttp.readyState == 4 && xhttp.status == 200) {
-                         html[0].children[1].children[1].children[1].children[0].children[0].children[0].children[0].innerText = id;
-                            console.log(id);
-                    
+     
+//               alert(this.responseText);
+                
+                var element = document.getElementById("vak0"+i).innerText = id; 
+                    if(i == 4){
+                        var woordguess = [];
+                        
+                        
+                        
+                    }else{
+                        i++;
+                    } 
+                 
                     }
                 };
-                data = JSON.stringify(id);                
+                data = JSON.stringify(data);                
                 xhttp.open("POST", 'gamecheck.php', true);
                 xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                xhttp.send("letter="+id);
+                xhttp.send("data="+data);
                 
          
     }

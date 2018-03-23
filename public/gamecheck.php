@@ -1,20 +1,11 @@
-<!DOCTYPE HTML>
-<html>
+<?php require_once('../private/initialize.php');
+
+
+
+if(isset($_POST['data'])){
     
-    <head>
-        <script>
-
-        </script>
-    </head>
-    <body>
-        
-        <?php 
-        
-        
-        $guess = json_decode($_POST['letter']);
-        echo $guess;
-        echo "TETSTESTSET";
-        ?>
-    </body>
-
-</html>
+    $obj = json_decode($_POST['data'], false);
+    
+//    echo ">>>>>>>>";
+//   print_r ($obj); 
+}

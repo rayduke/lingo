@@ -27,7 +27,7 @@
     
    
       
-    echo var_dump(str_split($woord, 1));
+    echo var_dump(str_split($hetwoord, 1));
 //        
 //        if ($guess === "$hetwoord[0]"){
 //            echo "JA";
@@ -36,7 +36,6 @@
     
         createTable();
         createAlphabet();
-  
 
 
 ?>

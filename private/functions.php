@@ -10,13 +10,14 @@ function rel_url($pad){
 
 
     function createTable(){
-   
+        $numrow = "";
         echo "<table id=vakken>";
 
         for($xas = 0; $xas < 5; $xas++){
-                echo "<tr id=row>";
+                $numrow++;
+                echo "<tr id=row".$numrow.">";
                 for($yas = 0; $yas < 5; $yas++){
-                  echo "<td class=navy  id=vak".$xas."".$yas."></td>";
+                  echo "<td class=navy id=vak".$xas."".$yas."></td>";
 
                 } echo "</tr>";
         } echo "</table>";
@@ -38,7 +39,9 @@ function rel_url($pad){
                 echo '<td class=letters><button onclick="letterkeus(this.id)" id='.chr(65 + $row).' class=alfa>'.chr(65 + $row).'</button></td>';
              }
          }  echo "</tr>";
-     }  echo "</table>"; 
+     
+         echo "</table>";
+       }   
 
 
     
