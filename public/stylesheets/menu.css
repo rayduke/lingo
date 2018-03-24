@@ -6,6 +6,7 @@
  
 .nav ul {
   list-style: none;
+  /*position: fixed;*/
   background-color: #000000;
   text-align: center;
   padding: 0;
@@ -39,7 +40,7 @@
  
 @media screen and (min-width: 600px) {
   .nav li {
-    width: 120px;
+    width: 100px;
     border-bottom: none;
     height: 50px;
     line-height: 50px;
@@ -58,7 +59,7 @@
   }
   .nav ul {
     overflow: auto;
-    width: 400px;
+    width: 480px;
     height: 60px;
     margin: 0 auto;
     
