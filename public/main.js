@@ -10,7 +10,7 @@ function letterkeus(id){
                 
                 
                    
-                var element = document.getElementById("vak0"+i).innerText = id;
+//                var element = document.getElementById("vak0"+i).innerText = id;
                 
                 
                 if(i == 4){
