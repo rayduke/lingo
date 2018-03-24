@@ -18,7 +18,7 @@
         createTable();
         createAlphabet();
 
-//echo '<div id=fetcharray></div';
+echo '<div id=fetcharray></div';
 ?>
 
         </div>
