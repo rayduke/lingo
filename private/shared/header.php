@@ -13,7 +13,7 @@
         
   </head>
     <body class="news">
-      <header> 
+      <header id="head"> 
        <div class=nav>
         <ul>
           <li><a href="index.php">Home</a></li>

@@ -62,13 +62,14 @@ h1{
     padding: 0 0 20px;
     text-align: center;
     font-size: 35px;
+    color: #f4e48c;
 }
 
 .login-box p{
     margin: 0px;
     padding: 0px;
     font-weight: bold;
-    color: lightskyblue;
+    color: #cf9d2e;
     
 }
 
@@ -92,3 +93,14 @@ h1{
     cursor: pointer;
 }*/
 
+/*---------------CSS Login ---------------*/
+victoria-two {
+	border: 2px solid #D24D57;
+}
+victoria-two:after {
+	background: #D24D57;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
