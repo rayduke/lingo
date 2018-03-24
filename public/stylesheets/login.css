@@ -1,5 +1,6 @@
 .login-box{
-    width: 520px;
+    margin-top: 50px;
+    width: 420px;
     height: 420px;
     background-color: rgba(0, 0 , 0, 0.74);
     color: #fff;
@@ -29,21 +30,29 @@
 }
             
             
-input{
-font-size: 17px;
-                
-}
-            
+input[type=text]
+{
+    color: #979797;
+    height: 28px;
+    padding-left: 10px;
+    text-decoration: none;
+    background-image: url('http://i.stack.imgur.com/pbpVI.png');
+    background-repeat: repeat-x;
+    border-radius: 5px; /*up to date browsers support this, but you can add prefixes if you want*/
+
+    border: 0;
+}       
             
             
             
 .avatar{
-    width: 180px;
-    height: 180px;
+    
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     position: absolute;
     top: -50px;
-    left: calc(42% - 50px);
+    left: calc(45% - 50px);
                 
 }
 
@@ -71,4 +80,15 @@ h1{
 }
 
 
+
+/*input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}*/
 

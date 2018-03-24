@@ -5,7 +5,9 @@
      <link rel="stylesheet" media="all" href="<?php echo rel_url('/stylesheets/style.css'); ?>" />
      <link rel="stylesheet" media="all" href="<?php echo rel_url('/stylesheets/login.css'); ?>" />
      <link rel="stylesheet" media="all" href="<?php echo rel_url('/stylesheets/menu.css'); ?>" />
-     <script src="main.js"></script>
+     <link rel="stylesheet" media="all" href="<?php echo rel_url('/stylesheets/tv.css'); ?>" />
+     <script src="<?php echo rel_url('/main.js');?>"></script>
+     
      <meta charset="utf-8" />
      <meta name="viewport" content="width=device-width" initial-scale="1"/>  
         
