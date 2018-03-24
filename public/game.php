@@ -10,7 +10,7 @@
           <h2>Spel</h2>
         </div>
         <div id=speelveld>
-<?php
+        <?php
 
 
         //    echo var_dump(str_split($hetwoord, 1));
