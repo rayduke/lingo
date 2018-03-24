@@ -1,19 +1,24 @@
-  
+              @font-face {
+                     font-family: lexieFont;
+                     src: url('../fonts/LexieReadable-Bold.ttf');
+            }
 /* ------------------------main tags --------------------------------------*/
             body{
                 
                 margin: 0;
+                padding:0;
                background: url('../img/lingo.png') fixed no-repeat ;;
                -webkit-background-size: cover;
                -moz-background-size: cover;
                -o-background-size: cover;
                background-size: cover;
+               font-family: LexieFont;
             }
             h1{
                text-align: center;
                font-size: 50px;
                margin: 5px;
-               color: black;
+/*               color: black;*/
             }
             
             .main{
@@ -22,16 +27,19 @@
             .main-wrapper{
                     margin: 0px;
 
+            }
+
+                    
 /*    
     text-align: center ;
     font-size: 30px;
-*/    font-family: geneva, arial, "Times new roman";/*
+    font-family: geneva, arial, "Times new roman";
     padding: 30px;
     float: right;
     position: fixed;*/
 
     
-            }
+            
             
             
             
@@ -40,7 +48,7 @@
 
 
 
-.nav-login{
+/*.nav-login{
     width: 400px;
     height: 200px;
     box-sizing: inline;
@@ -48,15 +56,15 @@
     border-radius: 5px;
     color: white;
     margin: auto;
-}
+}*/
 
 
 
-.nav-login, .loginInput{
+/*.nav-login, .loginInput{
     margin-top: 100px;
-    /*float: left;*/
-    /*box-sizing: border-box;*/
-}
+    float: left;
+    box-sizing: border-box;
+}*/
             
             #speelveld{
                width: 800px;
@@ -68,32 +76,19 @@
                margin: auto;
             }
             
-            table{
+/*            table{
                margin: auto;
                
         
             }
-            
-            #table .input{
+            */
+/*            #table .input{
                margin-top: 100px;
 
-            }
+            }*/
             
-            .button{
-               text-align: center;
-                
-               padding: 10px;
-               float:left;
-               background: white;
-               margin: 2px;
-               color: black;
-               border-radius: 10%;
-                
-            }
-            input{
-               font-size: 17px;
-                
-            }
+
+
             #signup, #inlog{
 /*               margin-bottom:75px;*/
             }     
@@ -140,38 +135,3 @@
             
 /*-----------------------menu bar---------------------------- */
 
-ul {
-    
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: -webkit-sticky; /* Safari */
-    position: fixed;
-    top: 0;
-    
-}
-
-li {
-    float: left;
-    
-}
-
-li a {
-    
-    display: block;
-    color: white;
-    font-size: 35px;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #000000 ;
-}
-
-.active {
-    background-color: #000000;
-}
