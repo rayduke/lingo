@@ -13,13 +13,17 @@
 <?php
 
 
-//    echo var_dump(str_split($hetwoord, 1));
-   
-        createTable();
-        createAlphabet();
+        //    echo var_dump(str_split($hetwoord, 1));
+          if (!isset($_SESSION['u_id'])) {    
+                createTable();
+                createAlphabet();
+          }else{
+              echo "<span id=error>Niet ingelogd, Log in om het spel te starten.</span>";
+          }
 
-echo '<div id=fetcharray></div';
-?>
+        echo '<div id=fetcharray></div';
+        echo '<div id=div></div>'
+        ?>
 
         </div>
             

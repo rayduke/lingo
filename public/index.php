@@ -7,9 +7,7 @@
             <div class=video>
                 <video autoplay>
                  <source src="video/lingo_intro.mp4" type="video/mp4">
-    
-            
-                Your browser does not support the video tag.
+                    Your browser does not support the video tag.
                 </video>
         </div>
 

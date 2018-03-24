@@ -42,7 +42,8 @@ function letterkeus(id){
 
 
 function signup(){
-    window.location.href = "signup.php";
+//    window.location.href = "signup.php";
+alert("hij doet het");
 }
 
 function checkGuess(){

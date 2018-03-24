@@ -75,7 +75,7 @@ h1{
 
 .login-box input[type=input], [type=password]{
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     font-size: 20px;
     /*width: 300px;*/
 }

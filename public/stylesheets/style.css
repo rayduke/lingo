@@ -80,6 +80,14 @@
                
             }
             
+            #error{
+                /*margin-right:100px;*/
+                margin-top: 300px;
+                font-size: 15px;
+                color: white;
+                
+            }
+            
             #vakken{
                 margin: auto;
                 padding:0;
