@@ -1,0 +1,73 @@
+/*body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}*/
+ 
+.nav ul {
+  list-style: none;
+  background-color: #000000;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 80px;
+  
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: yellow;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  background-color: background;
+}
+ 
+.nav a.active {
+  background-color: blue;
+  color: #444;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+ 
+ 
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 400px;
+    height: 60px;
+    margin: 0 auto;
+    
+  }
+  .nav {
+    background-color: black;
+  }
+  
+}
+
+
+

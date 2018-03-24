@@ -3,31 +3,27 @@
 <?php include(SHARED_PATH . '/header.php');?>
    
         <main class=main>
-            <div id="wrapper">
-            <h1>Login</h1>
-            </div>
-            <div id=login>
-             <table id=table>
-               <tr>
-                <div class=input>   
-                 <td>Gebruikersnaam: </td>
-                 <td><input type=input id=gbnaam placeholder=Gebruikersnaam></td>
-                </div>
-                <tr>
-                 <div class=input>   
-                  <td>Password: </td>
-                  <td><input type=password id=wachtw placeholder=achternaam></td>
-                </div> 
-                </tr> 
-                <div class=buttons>
-                  <input type="button" value=signup class=button id=signup onclick="signup()">
-                  <input type="button" value=login class=button id=inlog onclick="login()">
-                </div>
-               </div>
+
+            
+            
+            
+            <div class=login-box>
+                <img src="img/avatar2.png" class=avatar>
+                <h1>Log in</h1>
+                    <form>
+                     <p>Gebruikersnaam</p> 
+                     <input type=input id=gbnaam placeholder="Enter Gebruikersnaam"><br><br>
+                     <p>Wachtwoord</p> 
+                     <input type=password id=wachtw placeholder="Enter Achternaam">
+                     <input type="button" value=signup class=button id=signup onclick="signup()">
+                     <input type="button" value=login class=button id=inlog onclick="login()">
+                    </div>
+         
              
-             </table>
+             </ul>
+              </form>
             </div>
-           
+          
         </main>
     </body>
 </html>
