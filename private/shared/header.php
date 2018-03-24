@@ -19,7 +19,7 @@
           <li><a href="index.php">Home</a></li>
           <li><a href="login.php">Login</a></li>
           <li><a href="game.php">Spel</a></li>
-          <li><a href="game.php">Score bord</a></li>
+          <li><a href="game.php">Score</a></li>
           
         </ul> 
         </div>
