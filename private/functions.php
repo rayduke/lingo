@@ -28,19 +28,23 @@ function rel_url($pad){
     
     
     function createAlphabet(){
-        echo "<table id=alfa>";
+        echo "<table id=alfa align=center>";
             $row = -1;
         
-         for($i = 0; $i < 2; $i++){
+         for($i = 0; $i < 3; $i++){
     
             echo "<tr>";
-                for($u = 0; $u <14; $u++){
-                $row++;   
+                for($u = 0; $u < 9; $u++){
+                $row++; 
+                
                 echo '<td class=letters><button onclick="letterkeus(this.id)" id='.chr(65 + $row).' class=alfa>'.chr(65 + $row).'</button></td>';
              }
+ 
          }  echo "</tr>";
      
          echo "</table>";
+         
+         
        }   
 
 

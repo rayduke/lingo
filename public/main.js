@@ -7,8 +7,11 @@ var woordGuess = new Array();
  
 function letterkeus(id){
                 woordGuess[i] = document.getElementById("vak0"+i).innerText = id;
+                
+                
                    
                 var element = document.getElementById("vak0"+i).innerText = id;
+                
                 
                 if(i == 4){
                     

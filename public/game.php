@@ -7,7 +7,7 @@
     
 <main class=main>
         <div id="wrapper">
-          <h1>Spel</h1>
+          <h2>Spel</h2>
         </div>
         <div id=speelveld>
 <?php
