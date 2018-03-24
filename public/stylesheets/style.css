@@ -7,7 +7,8 @@
                 
                 margin: 0;
                 padding:0;
-               background: url('../img/lingo.png') fixed no-repeat ;;
+               background: url('../img/lingo.png') fixed no-repeat;
+               
                -webkit-background-size: cover;
                -moz-background-size: cover;
                -o-background-size: cover;
@@ -18,11 +19,13 @@
                text-align: center;
                font-size: 50px;
                margin: 5px;
-/*               color: black;*/
+               margin-top: -30px;
+
             }
             
             .main{
                margin-top: 100px;
+               margin: 0;
             }
             .main-wrapper{
                     margin: 0px;
@@ -30,13 +33,6 @@
             }
 
                     
-/*    
-    text-align: center ;
-    font-size: 30px;
-    font-family: geneva, arial, "Times new roman";
-    padding: 30px;
-    float: right;
-    position: fixed;*/
 
     
             
@@ -48,23 +44,7 @@
 
 
 
-/*.nav-login{
-    width: 400px;
-    height: 200px;
-    box-sizing: inline;
-    background-color: rgba(0, 0 , 0, 0.74);
-    border-radius: 5px;
-    color: white;
-    margin: auto;
-}*/
 
-
-
-/*.nav-login, .loginInput{
-    margin-top: 100px;
-    float: left;
-    box-sizing: border-box;
-}*/
             
             #speelveld{
                width: 800px;
@@ -76,22 +56,7 @@
                margin: auto;
             }
             
-/*            table{
-               margin: auto;
-               
-        
-            }
-            */
-/*            #table .input{
-               margin-top: 100px;
 
-            }*/
-            
-
-
-            #signup, #inlog{
-/*               margin-bottom:75px;*/
-            }     
             
            .navy{
                background-color: dodgerblue;
@@ -132,6 +97,5 @@
          
    
             
-            
-/*-----------------------menu bar---------------------------- */
+
 

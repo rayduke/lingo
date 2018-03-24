@@ -1,30 +1,19 @@
 <?php require_once('../private/initialize.php');?>
 
 <?php include(SHARED_PATH . '/header.php');?>
-   
-        <main class=main>
 
+        <main>
+        <div class="center">
+            <div class=video>
+                <video autoplay>
+                 <source src="video/lingo_intro.mp4" type="video/mp4">
+    
             
-            
-            
-            <div class=login-box>
-                <img src="img/avatar2.png" class=avatar>
-                <h1>Log in</h1>
-                    <form>
-                     <p>Gebruikersnaam</p> 
-                     <input type=input id=gbnaam placeholder="Enter Gebruikersnaam"><br><br>
-                     <p>Wachtwoord</p> 
-                     <input type=password id=wachtw placeholder="Enter Achternaam">
-                     <input type="button" value=signup class=button id=signup onclick="signup()">
-                     <input type="button" value=login class=button id=inlog onclick="login()">
-                    </div>
-         
-             
-             </ul>
-              </form>
-            </div>
-          
+                Your browser does not support the video tag.
+                </video>
+        </div>
+
         </main>
+
     </body>
 </html>
-
