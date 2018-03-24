@@ -8,8 +8,8 @@
      <link rel="stylesheet" media="all" href="<?php echo rel_url('/stylesheets/tv.css'); ?>" />
      <script src="<?php echo rel_url('/main.js');?>"></script>
      	<script>
-            function signup(){
-                window.location.href = "signup.php";
+            function inschrijven(){
+                window.location.href = "lingo/public/loginsystem/signup.php";
               }
         </script> 
      
@@ -20,7 +20,7 @@
     <body class="news">
       <header id="head"> 
        <div class=nav>
-        <ul>
+        <ul> 
           <li><a href="index.php">Home</a></li>
           <li><a href="login.php">Login</a></li>
           <li><a href="game.php">Spel</a></li>

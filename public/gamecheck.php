@@ -20,6 +20,39 @@
         $result_match = [''];
         $result_match = array_intersect($juistantwoord, $guessed);
         
+       
+        
+        
+        
+        if(isset($guessed)){
+            analyzeGuess($guessed, $juistantwoord);
+        }
+        
+
+        
+        
+        
+function analyzeGuess($guessed, $juistantwoord){
+     
+     if($guessed == $juistantwoord){
+         echo ">>>GERADEN!!!!!!<<<";
+         //final audio play
+         
+     }else {
+        for ($i = 0;$i < 4;$i++) {
+            if ($guessed[$i] == $juistantwoord[$i]) {
+             // A correct guess 
+                echo "correct Guess: ".$guessed[$i];
+             } else {
+            // Keep track of the guessed colors, for output later
+                 
+        }
+    }
+} 
+}
+
+
+ 
         echo "<br>>>>>>>>>>>>>>>>>>>>><br>";
         print_r($juistantwoord);
         echo "<br>>>>>>>>>>>>>>>>>>>>><br>";
