@@ -9,7 +9,7 @@
      <script src="<?php echo rel_url('/main.js');?>"></script>
      	<script>
             function inschrijven(){
-                window.location.href = "lingo/public/loginsystem/signup.php";
+                window.location.href = "signup.php";
               }
         </script> 
      

@@ -14,7 +14,7 @@
 
 
         //    echo var_dump(str_split($hetwoord, 1));
-          if (!isset($_SESSION['u_id'])) {    
+          if (isset($_SESSION['u_uid'])) {    
                 createTable();
                 createAlphabet();
           }else{

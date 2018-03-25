@@ -14,11 +14,11 @@ if (isset($_POST['submit'])) {          //hier wordt gecheckt of de submitknop i
 	
 	
 	if (empty($first) || empty($last) || empty($email) || empty($uid) || empty($pwd)) {     //check voor lege velden
-		header("Location: ../signup.php?signup=empty");
+		header("Location: signup.php?signup=empty");
 		exit();
 	} else {
 		if (!preg_match("/^[a-zA-Z]*$/", $first) || !preg_match("/^[a-zA-Z]*$/", $last)) {    //check of de ingevoerde namen alleen letters bevatten en geen cijfers
-			header("Location: ../signup.php?signup=invalid");
+			header("Location: signup.php?signup=invalid");
 			exit();
                 } else {
                             
@@ -39,7 +39,7 @@ if (isset($_POST['submit'])) {          //hier wordt gecheckt of de submitknop i
                                         //hier wordt de gebruiker in de database opgeslagen
                                         $sql ="INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd) VALUES ('$first', '$last', '$email', '$uid', '$hashedPwd' );";
                                 mysqli_query($conn, $sql);
-                                header("Location: ../signup.php?signup=success");
+                                header("Location: ../../../public/index.php?signup=success");
                                 exit();
 			}
 		}
