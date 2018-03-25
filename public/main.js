@@ -74,9 +74,7 @@ function letterkeus(id){
 //    
 //}
 
-function audioafspelen(){
-    
-}
+
 
 function letterafspelen(id){
 

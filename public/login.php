@@ -23,14 +23,14 @@
                                           <button type="submit" class="button" name="submit">Uitloggen</button></form>'; //submit zorgt ervoor dat de gebruiker naar de logout.inc.php gaat en daar worden de sessions leeg gemaakt en de gebruiker gaat terug naar de indez
                             }else{
 //                                             
-                                    echo  '<form>
+                                    echo  '<form action="../private/shared/loginsystem/login.inc.php" method="POST">
                                             <p>Gebruikersnaam</p> 
-                                              <input type=input id=gbnaam placeholder="Vul je gebruikersnaam in"><br><br>
+                                              <input type=input name=uid id=gbnaam placeholder="Vul je gebruikersnaam in"><br><br>
                                             <p>Wachtwoord</p> 
-                                              <input type=password id=wachtw placeholder="Vul je wachtwoord">
+                                              <input type=password name=pwd id=wachtw placeholder="Vul je wachtwoord">
                                              
                                               <input type="button" value=signup name=signup class=button onclick="inschrijven()">
-                                              <input type="button" value=login name=pwd class=button id=inlog onclick="login()">
+                                              <input type="submit" value=login class=button id=inlog">
                                             <form>';
                                           
 //                                    

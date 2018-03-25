@@ -3,6 +3,12 @@
 <?php include(SHARED_PATH . '/header.php');?>
 
         <main>
+        <?php
+                        
+				if (isset($_SESSION['u_id'])){
+					echo "Je bent ingelogd";
+				}
+			?>		    
         <div class="center">
             <div class=video>
                 <video autoplay>
