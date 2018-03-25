@@ -31,13 +31,27 @@ function rel_url($pad){
         echo "<table id=alfa align=center>";
             $row = -1;
         
-         for($i = 0; $i < 3; $i++){
+         for($i = 0; $i < 2; $i++){
     
             echo "<tr>";
                 for($u = 0; $u < 9; $u++){
                 $row++; 
                 
                 echo '<td class=letters><button onclick="letterkeus(this.id)" id='.chr(65 + $row).' class=alfa>'.chr(65 + $row).'</button></td>';
+             }
+ 
+         }  echo "</tr>";
+     
+
+            $row = -1;
+        
+         for($i = 0; $i < 1; $i++){
+    
+            echo "<tr>";
+                for($u = 0; $u < 8; $u++){
+                $row++; 
+                
+                echo '<td class=letters><button onclick="letterkeus(this.id)" id='.chr(83 + $row).' class=alfa>'.chr(83 + $row).'</button></td>';
              }
  
          }  echo "</tr>";
