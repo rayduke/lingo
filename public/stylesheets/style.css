@@ -7,6 +7,7 @@
                      font-family: monterey;
                      src: url('../fonts/monterey/MontereyFLF.ttf');
             }
+
 /* ------------------------main tags --------------------------------------*/
             body{
                 
@@ -24,6 +25,7 @@
                text-align: center;
                font-size: 50px;
                margin: 5px;
+               font-family: monterey;
 /*               margin-top: -30px;
                margin-bottom: -50px;*/
                
@@ -154,7 +156,7 @@
             #row1, #row2, #row3, #row4, #row5{
                 font-size: 50px;
                 text-align: center;
-                font-family: montery;
+                font-family: monterey;
                 
             }
 

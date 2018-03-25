@@ -10,6 +10,9 @@
           <h2>Spel</h2>
         </div>
         <div id=speelveld>
+           <audio autoplay>
+               <source src="audio/start.mp3" type="audio/mpeg">
+                  </audio>
         <?php
 
 
