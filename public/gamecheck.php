@@ -1,5 +1,5 @@
 <?php require_once('../private/initialize.php');
-
+session_start();
 
     $woorden = ['baken','actie','beter','breuk','conus',''
                 . 'droom','enkel','cavia','email','fruit',''
@@ -35,12 +35,15 @@ function analyzeGuess($guessed, $juistantwoord){
               <source src="audio/geraden.mp3" type="audio/mpeg">;
               </audio>';
               
-         //final audio play
+         
          if($a == 0){ $punten += 10;}
             elseif ($a == 1){ $punten += 8;}
             elseif ($a == 2){ $punten += 6;}
             elseif ($a == 3){ $punten += 4;}
             elseif ($a == 4){ $punten += 2;}
+            
+            $_SESSION['win'] = true;
+            //verstuur punten gewonnen pot naar database.
             
             
          
@@ -50,16 +53,15 @@ function analyzeGuess($guessed, $juistantwoord){
              // A correct guess 
                 echo "goede guess ".$guessed[$i]; //groene achtergrond maken van deze letters met geluid.
              } else {
-                 
-                 
-//                 
-                
-                
+               
              } 
                  echo "verkeerde keus".$guessed[$i];
                  echo '<audio autoplay>;
-              <source src="audio/fout.mp3" type="audio/mpeg">;
-              </audio>';
+                  <source src="audio/fout.mp3" type="audio/mpeg">;
+                  </audio>';
+                 
+                 $_SESSION['win'] = false;
+                 $_SESSION['reset']= true;
                
 
 
