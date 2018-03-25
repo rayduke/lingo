@@ -1,7 +1,5 @@
 <?php require_once('../private/initialize.php');
-if($guessed == $juistantwoord){
-              header("Refresh:0");
-}
+
 
     $woorden = ['baken','actie','beter','breuk','conus',''
                 . 'droom','enkel','cavia','email','fruit',''
