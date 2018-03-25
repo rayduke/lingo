@@ -8,7 +8,7 @@
     
     $rand = rand(0,count($woorden));
     $woord = $woorden[$rand];
-    $hetwoord = strtoupper("baken");
+    $hetwoord = strtoupper("zaten");
     
     
         
@@ -17,13 +17,8 @@
        
 // checkt welke character gelijk is tussen beide arrays.
         print_r($guessed);
-        $result_match = [''];
-        $result_match = array_intersect($juistantwoord, $guessed);
-        
        
-        
-        
-        
+
         if(isset($guessed)){
             analyzeGuess($guessed, $juistantwoord);
         }
@@ -31,32 +26,41 @@
 
         
         
-        
+ // deze functie controleert hoeveel er goed of fout geraden zijn. + telt de e.v.t punten op.       
 function analyzeGuess($guessed, $juistantwoord){
-     
+     $result_match = [''];
+        
      if($guessed == $juistantwoord){
-         echo ">>>GERADEN!!!!!!<<<";
+        echo '<audio autoplay>;
+              <source src="audio/geraden.mp3" type="audio/mpeg">;
+              </audio>';
+              
          //final audio play
+         if($a == 0){ $punten += 10;}
+            elseif ($a == 1){ $punten += 8;}
+            elseif ($a == 2){ $punten += 6;}
+            elseif ($a == 3){ $punten += 4;}
+            elseif ($a == 4){ $punten += 2;}
          
      }else {
-        for ($i = 0;$i < 4;$i++) {
+        for ($i = 0;$i < 5;$i++) {
             if ($guessed[$i] == $juistantwoord[$i]) {
              // A correct guess 
-                echo "correct Guess: ".$guessed[$i];
+                echo "goede guess ".$guessed[$i]; //groene achtergrond maken van deze letters met geluid.
              } else {
-            // Keep track of the guessed colors, for output later
+                 
+                 
+//                 
+                
+                
+             } 
+                 echo "verkeerde keus".$guessed[$i];
+               
+
+
+// controlleer of letters in array zitten en skip naar volgende ROW. voor een nieuwe ronde.
                  
         }
     }
 } 
-}
-
-
- 
-        echo "<br>>>>>>>>>>>>>>>>>>>>><br>";
-        print_r($juistantwoord);
-        echo "<br>>>>>>>>>>>>>>>>>>>>><br>";
-
-        print_r($result_match);
-
 
