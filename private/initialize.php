@@ -11,7 +11,9 @@ $public_end = strpos($_SERVER['SCRIPT_NAME'], '/public') + 7;
 $doc_root = substr($_SERVER['SCRIPT_NAME'], 0, $public_end);
 define("WWW_ROOT", $doc_root);
 
-
+$public_end2 = strpos($_SERVER['SCRIPT_NAME'], '/shared') + 7;
+$doc_root2 = substr($_SERVER['SCRIPT_NAME'], 0, $public_end2);
+define("WWW_ROOTSHARED", $doc_root2);
 
 
 require_once('functions.php');

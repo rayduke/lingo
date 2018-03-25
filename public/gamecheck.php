@@ -32,7 +32,7 @@ function analyzeGuess($guessed, $juistantwoord){
         
      if($guessed == $juistantwoord){
         echo '<audio autoplay>;
-              <source src="audio/geraden.mp3" type="audio/mpeg">;
+              <source src="audio/geraden2.mp3" type="audio/mpeg">;
               </audio>';
               
          
@@ -56,9 +56,7 @@ function analyzeGuess($guessed, $juistantwoord){
                
              } 
                  echo "verkeerde keus".$guessed[$i];
-                 echo '<audio autoplay>;
-                  <source src="audio/fout.mp3" type="audio/mpeg">;
-                  </audio>';
+                 
                  
                  $_SESSION['win'] = false;
                  $_SESSION['reset']= true;
@@ -68,6 +66,9 @@ function analyzeGuess($guessed, $juistantwoord){
 // controlleer of letters in array zitten en skip naar volgende ROW. voor een nieuwe ronde.
                  
         }
+        echo '<audio autoplay>;
+                  <source src="audio/fout.mp3" type="audio/mpeg">;
+                  </audio>';
     }
 }  
 

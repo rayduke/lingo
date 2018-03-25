@@ -6,6 +6,7 @@
      <link rel="stylesheet" media="all" href="<?php echo rel_url('/stylesheets/login.css'); ?>" />
      <link rel="stylesheet" media="all" href="<?php echo rel_url('/stylesheets/menu.css'); ?>" />
      <link rel="stylesheet" media="all" href="<?php echo rel_url('/stylesheets/tv.css'); ?>" />
+<!--     <link rel="stylesheet" media="all" href="<?php echo rel_url('/stylesheets/leaderboard.css'); ?>" />-->
      <script src="<?php echo rel_url('/main.js');?>"></script>
      	<script>
             function inschrijven(){
@@ -24,7 +25,7 @@
           <li><a href="index.php">Home</a></li>
           <li><a href="login.php">Login</a></li>
           <li><a href="game.php">Spel</a></li>
-          <li><a href="game.php">Score</a></li>
+          <li><a href="<?php echo rel_urlS('private/shared/loginsystem/leaderboard.php') ;?>">Score</a></li>
           
         </ul> 
         </div>

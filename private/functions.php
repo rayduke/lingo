@@ -6,6 +6,13 @@ function rel_url($pad){
     return WWW_ROOT . $pad;
 }
 
+function rel_urlS($padS){
+//    if($padS[0] != '/'){
+//        $padS = "/" . $padS;
+//    }
+    return WWW_ROOTSHARED . $padS;
+}
+
 
 
 
