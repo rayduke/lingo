@@ -1,5 +1,7 @@
 <?php require_once('../private/initialize.php');
-
+if($guessed == $juistantwoord){
+              header("Refresh:0");
+}
 
     $woorden = ['baken','actie','beter','breuk','conus',''
                 . 'droom','enkel','cavia','email','fruit',''
@@ -41,6 +43,8 @@ function analyzeGuess($guessed, $juistantwoord){
             elseif ($a == 2){ $punten += 6;}
             elseif ($a == 3){ $punten += 4;}
             elseif ($a == 4){ $punten += 2;}
+            
+            
          
      }else {
         for ($i = 0;$i < 5;$i++) {
@@ -55,6 +59,9 @@ function analyzeGuess($guessed, $juistantwoord){
                 
              } 
                  echo "verkeerde keus".$guessed[$i];
+                 echo '<audio autoplay>;
+              <source src="audio/fout.mp3" type="audio/mpeg">;
+              </audio>';
                
 
 
@@ -62,5 +69,5 @@ function analyzeGuess($guessed, $juistantwoord){
                  
         }
     }
-} 
+}  
 
