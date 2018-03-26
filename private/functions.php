@@ -16,6 +16,7 @@ function rel_urlS($padS){
 
 
 
+
     function createTable(){
         $numrow = "";
         echo "<table id=vakken>";
@@ -68,6 +69,5 @@ function rel_urlS($padS){
          echo "</table>";
          
          
-       }   
-
-
+       }
+       

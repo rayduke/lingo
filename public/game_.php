@@ -12,10 +12,7 @@
         <div id=speelveld>
            <audio autoplay>
                <source src="audio/start.mp3" type="audio/mpeg">
-                  </audio>            
-            <progress id="tijd" value="60" max="60"></progress>
-            <button id="knop" onclick="timer(60);">Start!</button>
-            <div id="divy">de resterende tijd is <span id="time">01:00</span>minuten</div>
+                  </audio>
         <?php
 
 
@@ -28,11 +25,10 @@
           }
 
         echo '<div id=fetcharray></div';
-        echo '<div id=div></div>';
+        echo '<div id=div></div>'
         ?>
 
         </div>
-            
             
     </main>
    </body>
