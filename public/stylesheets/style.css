@@ -62,20 +62,20 @@
             
             
             .button::-webkit-input-placeholder { /* WebKit browsers */
-    font-size: 0.5em;
-}
+                font-size: 0.5em;
+            }
 
-.button:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    font-size: 0.5em;
-}
+            .button:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                font-size: 0.5em;
+            }
 
-.button::-moz-placeholder { /* Mozilla Firefox 19+ */
-     font-size: 0.5em;
-}
+            .button::-moz-placeholder { /* Mozilla Firefox 19+ */
+                 font-size: 0.5em;
+            }
 
-.button:-ms-input-placeholder { /* Internet Explorer 10+ */
-    font-size: 0.5em;
-} 
+            .button:-ms-input-placeholder { /* Internet Explorer 10+ */
+                font-size: 0.5em;
+            } 
             
 /* ------------------------------------------------------------------*/  
 

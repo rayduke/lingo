@@ -50,7 +50,7 @@ function analyzeGuess($guessed, $juistantwoord){
      }else {
         for ($i = 0;$i < 5;$i++) {
             if ($guessed[$i] == $juistantwoord[$i]) {
-             // A correct guess 
+              
                 echo "goede guess ".$guessed[$i]; //groene achtergrond maken van deze letters met geluid.
              } else {
                
@@ -60,11 +60,7 @@ function analyzeGuess($guessed, $juistantwoord){
                  
                  $_SESSION['win'] = false;
                  $_SESSION['reset']= true;
-               
-
-
-// controlleer of letters in array zitten en skip naar volgende ROW. voor een nieuwe ronde.
-                 
+                                
         }
         echo '<audio autoplay>;
                   <source src="audio/fout.mp3" type="audio/mpeg">;
