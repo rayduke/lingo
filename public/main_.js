@@ -1,142 +1,78 @@
 if (typeof i == 'undefined') {
         var i = 0;
         var a = 0;
-//        document.getElementById(("vak"+a+""+0)).woordGuess[0].innerText.display;
-
+ 
 }  
-var array = new Array;
 var woordGuess = new Array();  
 
  
-function letterkeus(id,array){
+function letterkeus(id){
+                console.log(i);
+   
                 
-                woordGuess[i] = document.getElementById("vak"+a+""+i).innerText = id; //hier worden de letters in de array gezet
-                      
-                        
-                console.log(a);
+                woordGuess[i] = document.getElementById("vak"+a+""+i).innerText = id;
+                
+                
+                
+           
+//                var element = document.getElementById("vak0"+i).innerText = id;
+                
+                
                 if(i == 4){
-                    
-                    a++;        //rij van veld
+                    a++;
 //                  
-                    var data = woordGuess;
+                    console.log(i);
+                    console.log(a);
+                    var data = woordGuess
                     var xhttp = new XMLHttpRequest();
                     xhttp.onreadystatechange = function(){
                     if(xhttp.readyState == 4 && xhttp.status == 200) {
+                        
                     document.getElementById("fetcharray").innerHTML = this.responseText;
                     
-                    veranderkleur(this.responseText,array);
-                    
-                    var array2 = this.responseText;
-                    array2.split(" ", 6)
-                    var firstletter = array2.substring(26, 27);
-                    document.getElementById("vak"+a+"0").innerText = firstletter;
-                    console.log(firstletter);
-             
                     }
                 };
                 data = JSON.stringify(data);                
                 xhttp.open("POST", 'gamecheck.php', true);
                 xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
                 xhttp.send("data="+data);
-//                console.log(data);
-                if( a == 5 ){       //als dit voorkomt is het hele speelveld vol
-                    
-                    setTimeout(function () { veldleegmaken(); }, 5000);
-
+                console.log(data);
+                if( i == 5 ){
                     a = 0;
+//                    window.location.reload();
                 }
                 
                 return i=0;
-
+               
+                
+                
+    
                 }else{
-                  i++;              
+                     
+                 
+                i++;
+
+              
                 } 
-            
+
 
 }   
 
-
-
-function veranderkleur(hetantwoord,array){               //verandert kleur na vergelijking met het woord.
-  
-        
-        
-        array = hetantwoord.split(" ", 5);
-        console.log(array);
-        
-         
-
-        for (var i = 0; i < array.length; i++) {
-            if (array[i] === 'fout') {
-            document.getElementById('vak'+(a-1)+i).style.backgroundColor='red';
-            }
-        }
-          
-          
-
-        for (var i = 0; i < array.length; i++){    
-            if(array[i] === 'goed'){
-            document.getElementById('vak'+(a-1)+i).style.backgroundColor='green'; 
-           
-                
-           
-            
-            }
-        
-        }
-        
-        for (var i = 0; i < array.length; i++){    
-            if(array[i] === 'half'){
-         
-            document.getElementById('vak'+(a-1)+i).style.backgroundColor='yellow'; 
-            }
-        }
-    }
-  
-  
-
-
-  function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
-    setInterval(function () {               //elke 1000ms gaat deze functie door de setInterval af
-        minutes = parseInt(timer / 60, 10); //The parseInt() function parses a string and returns an integer.
-        seconds = parseInt(timer % 60, 10); //het getal tijd wordt hier opgedeeld in minuten en seconden
-        
-        document.getElementById("tijd").value = timer;
-        
-        minutes = minutes < 10 ? "0" + minutes : minutes;   //om de weergave in twee aaneengesloten cijfers te houden
-        seconds = seconds < 10 ? "0" + seconds : seconds;   //idem^^
-        
-        display.textContent = minutes + ":" + seconds;  //hiermee wordt de tijd weergegeven in html met het DOM
-        
-        if (--timer < 0) {
-            document.getElementById("divy").innerHTML = "de resterende tijd is op!";    //verbergt de doorlopende setInterval
-        }
-    }, 1000);
-}
-    
-function timer(tijd) {
-    document.getElementById("knop").onclick = "nul()";   //voorkomt resetten van timer door weer op de startknop te drukken
-    var fiveMinutes = tijd,
-    display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
-    };      
-
-//window.oncontextmenu = function(){      //anti-cheat functie tijdens timer countdown
-//    alert("dit is valsspelen!")
-//};
-
-
-function veldleegmaken(){
-    for(p = 0; p < 5; p++){
-        for (q = 0; q < 5; q++){
-            
-            document.getElementById("vak"+p+""+q).innerText = "";  //maak veld weer leeg
-            document.getElementById("vak"+p+""+q).style.backgroundColor = "#1f6794";
-        }
-    }
-}
-
+//
+//
+//function ontvangenAntwoord(){
+//
+//            var xmlhttp = new XMLHttpRequest();
+//        xmlhttp.onreadystatechange = function() {
+//            if (this.readyState == 4 && this.status == 200) {
+//                var myObj = JSON.parse(this.responseText);
+//                document.getElementById("demo").innerHTML = myObj.name;
+//            }
+//        };
+//        xmlhttp.open("GET", "gamecheck.php", true);
+//        xmlhttp.send();
+//    
+//}
 
 
 
@@ -267,6 +203,20 @@ function letterafspelen(id){
                     break;
                                 
                     
-    };
-};
+    }
+    
+}
 
+
+function veranderkleur(){
+    //verandert kleur na vergelijking met het woord. 
+}
+
+
+function countdown(){
+    alert("countdown");
+}
+
+function veldleegmaken(){
+    
+}
