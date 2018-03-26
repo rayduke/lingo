@@ -69,6 +69,8 @@ function veranderkleur(hetantwoord,array){               //verandert kleur na ve
         for (var i = 0; i < array.length; i++) {
             if (array[i] === 'fout') {
             document.getElementById('vak'+(a-1)+i).style.backgroundColor='red';
+            
+
             }
         }
           
@@ -136,8 +138,15 @@ function veldleegmaken(){
         }
     }
 }
-
-
+resultaatgeluid(woordGuess);
+function resultaatgeluid(array){
+    if(array == 'fout'){
+        var audio = new Audio('audio/fout.mp3');
+            audio.play();
+            
+    }
+    
+}
 
 
 function letterafspelen(id){

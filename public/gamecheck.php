@@ -33,7 +33,11 @@ session_start();
 function analyzeGuess($guessed, $juistantwoord){        
         
            //ontvangen van ingevulde array $guessed    volledig goed antwoord
-        
+//        if($guessed==$juistantwoord){
+//            echo   '<audio autoplay>;
+//                      <source src="audio/geraden2.mp3" type="audio/mpeg">;
+//                    </audio>';
+//        }
 
           
                 for ($i = 0;$i < 5;$i++) {      //antwoord os niet goed en wordt hier per letter vergeleken. alleen bij een volle array
@@ -59,4 +63,4 @@ function analyzeGuess($guessed, $juistantwoord){
 //            elseif ($a == 4){ $punten += 2;}
             
             //$_SESSION['win'] = true;
-                 echo $eersteletter;   //verstuur punten gewonnen pot naar database.
+//                 echo $eersteletter;   //verstuur punten gewonnen pot naar database.
